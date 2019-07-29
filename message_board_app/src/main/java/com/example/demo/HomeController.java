@@ -12,7 +12,9 @@ public class HomeController {
 //	このURLにアクセスしたらメソッドが実行される
 	@RequestMapping("/")
 	public String index(ModelMap modelMap) {
-		modelMap.addAttribute("message", "hello world");
+//		第一引数が「何という名前で渡すか」第二引数が「内容」
+		modelMap.addAttribute("message", "hello! world!");
+//		helloという名のhtmlファイルを指定する
 		return "hello";
 	}
 }
