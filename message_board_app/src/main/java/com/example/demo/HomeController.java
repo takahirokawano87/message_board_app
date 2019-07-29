@@ -1,5 +1,4 @@
 package com.example.demo;
-
 //パッケージのimport
 //Controllerの機能をimport
 import org.springframework.stereotype.Controller;

@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,3 +9,15 @@
 <p>hello world!</p>
 </body>
 </html>
+=======
+<!-- layout:decoretorは個別のhtml -->
+<div layout:decoretor = "layout">
+	<!-- layout:frangemntは共通のレイアウト -->
+	<div layout:frangemnt = "contents">
+		<h1>見出し</h1>
+		<h2>見出し</h2>
+		<!-- Controllerから受け取った文字を表示する -->
+		<p th:text="${message}"></p>
+	</div>
+</div>
+>>>>>>> Stashed changes
