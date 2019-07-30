@@ -1,24 +1,11 @@
-<<<<<<< Updated upstream
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>掲示BANBAN!</title>
-</head>
-<body>
-<!-- Controllerから渡された文字を表示する -->
-<p th:text="${message}"></p>
-</body>
-</html>
-=======
-<!-- layout:decoretorは個別のhtml -->
-<div layout:decoretor = "layout">
-	<!-- layout:frangemntは共通のレイアウト -->
-	<div layout:frangemnt = "contents">
+<!-- layout:decoratorは個別のhtml -->
+<div layout:decorator = "layout">
+	<!-- layout:fragmentは共通のレイアウト -->
+	<div layout:fragment = "contents">
 		<h1>見出し</h1>
 		<h2>見出し</h2>
 		<!-- Controllerから受け取った文字を表示する -->
-		<p th:text="${message}"></p>
+		<p th:text = "${message}"></p>
 	</div>
 </div>
->>>>>>> Stashed changes
+
